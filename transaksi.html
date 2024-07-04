@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="transaksi.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Ambil nilai dari form
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const package = document.getElementById('package').value;
+
+            // Tampilkan pesan konfirmasi
+            const successMessage = document.getElementById('success-message');
+            successMessage.innerHTML = `
+                <p>Terima kasih, <strong>${name}</strong>!</p>
+                <p>Pesanan Anda untuk paket <strong>${package}</strong> telah berhasil dilakukan.</p>
+                <p>Detail pesanan akan dikirim ke email: <strong>${email}</strong>.</p>
+                <p>Jika ada pertanyaan, kami akan menghubungi Anda di nomor: <strong>${phone}</strong>.</p>
+                <p>Selamat menikmati perjalanan Anda!</p>
+            `;
+            successMessage.classList.remove('hidden');
+
+            // Reset form
+            document.getElementById('transaction-form').reset();
+
+            // Redirect ke index.html setelah beberapa detik
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 5000); // Redirect setelah 5 detik
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-indonesia">About Indonesia</a></li>
+                <li><a href="index.html#destination">Destination</a></li>
+                <li><a href="index.html#budaya">budaya</a></li>
+                <li><a href="#paket">Paket</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="transaction">
+            <h1>Formulir Pemesanan Paket Perjalanan</h1>
+            <form id="transaction-form" onsubmit="handleSubmit(event)">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="package">Pilih Paket:</label>
+                <select id="package" name="package" required>
+                    <option value="KNOW INDONESIA">KNOW INDONESIA</option>
+                    <option value="KNOW A LOT INDONESIA">KNOW A LOT INDONESIA</option>
+                    <option value="AROUND THE INDONESIA">AROUND THE INDONESIA</option>
+                </select>
+
+                <button type="submit">Lanjutkan Pembayaran</button>
+            </form>
+            <div id="success-message" class="hidden">Transaksi berhasil! Terima kasih telah melakukan pemesanan.</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism. All rights reserved. Designed with care to provide the best information for your travel needs across the beautiful archipelago of Indonesia.</p>
+    </footer>
+</body>
+</html>

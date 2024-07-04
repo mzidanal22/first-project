@@ -1,0 +1,554 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar nav ul li a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 0 5px;
+    color: #fff;    
+    border-radius: 999px;
+    text-shadow: 2px 3px 10px black;
+}
+
+.navbar nav ul li a:hover{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-height: 650px;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    color: white;
+}
+
+.head-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.head-text h1{
+    font-size: 64px;
+    margin: 0;
+    text-shadow: 2px 3px 10px black;
+}
+
+.head-text p{
+    margin: 0;
+    text-shadow: 1px 2px 10px black;
+}
+
+.info1 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.info1 iframe{
+    margin: 0 30px;
+}
+
+.info1 .what-indo{
+    max-width: 500px;
+    text-align: justify;
+    margin: 0 30px;
+}
+
+.what-indo h2{
+    font-size: 38px;
+    margin: 0;
+}
+
+.destination h2{
+    text-align: center;
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.destination{
+    padding: 50px 20px;
+}
+
+.destination-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1{
+    min-width: 250px;
+    min-height: 300px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 25px;
+    background-color: aqua;
+}
+
+.card1 p{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 3px 10px black;
+    font-size: 24px;
+}
+
+.hotel{
+    background-color: black;
+    padding: 20px 0;
+}
+
+.hotel h2{
+    color: white;
+}
+
+.hotel-card{
+    padding : 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel h2{
+    font-size: 38px;
+    text-align: center;
+}
+
+.card2{
+    max-width: 300px;
+    min-width: 30px;
+    max-height: 350px;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 0 10px;
+}
+
+.card2 h4, .card2 h3, .card2 p{
+    margin: 0
+}
+
+.card2 h4{
+    font-weight: 400;
+    color: gray;
+}
+
+.frst-btn{
+    margin: 10px;
+
+    background-color: rgb(255, 43, 43);
+    color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.frst-btn:hover{
+    background-color: rgb(177, 21, 21);
+    transition: 0.5s;
+}
+
+footer{
+    min-height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menjangan{
+    background-image: url(assets/menjangan.jpg);
+    background-size: cover;
+    background-position: -150px;
+}
+
+#ulun-danu {
+    background-image: url(assets/ulun-danu.jpg);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: -150px -20px
+}
+
+#borobudur {
+    background-image: url(assets/borobudur.jpg);
+    background-size: 500px;
+    background-position: -150px 0;
+    background-repeat: no-repeat;
+}
+
+#toba {
+    background-image: url(assets/toba.jpg);
+    background-size: 525px;
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+}
+
+#bunaken {
+    background-image: url(assets/bunaken.jpg);
+    background-size: 620px;
+    background-position: -75px 0;
+    background-repeat: no-repeat;
+}
+
+#raja-ampat {
+    background-image: url(assets/raja-ampat.jpg);
+    background-size: 620px;
+    background-position: -20px 0;
+    background-repeat: no-repeat;
+}
+
+#toraja {
+    background-image: url(assets/toraja.jpg);
+    background-size: 600px;
+    background-position: -75px 0;
+    background-repeat: no-repeat;
+}
+
+#bromo {
+    background-image: url(assets/bromo.jpg);
+    background-size: 560px;
+    background-position: -130px 0;
+    background-repeat: no-repeat;
+}
+
+.budaya{
+    text-align: center;
+    padding: 50px;
+}
+
+.budaya h2{
+    font-size: 64px;
+    margin: 0;
+}
+
+.list-budaya{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3{
+    min-width: 350px;
+    min-height: 320px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 25px;
+    background-color: aqua;
+    color: white;
+}
+
+.card3 h3{
+    font-size: 24px;
+    text-shadow: 2px 3px 10px black;
+}
+
+#tari {
+    background-image: url(assets/tari.jpg);
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+#upacara {
+    background-image: url(assets/upacara.jpg);
+    background-size: cover;
+    background-position: -80px 0;
+    background-repeat: no-repeat;
+}
+
+#tradisi {
+    background-image: url(assets/tradisi.jpg);
+    background-size: cover;
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+}
+
+.package{
+    margin: 40px 0;
+}
+
+.list-paket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.paket{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 10px;
+    padding: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.package h2{
+    text-align: center;
+    font-size: 38px;
+}
+
+.paket h3{
+    font-size: 24px;
+    padding: 10px 0;
+    color: red;
+}
+
+.paket p{
+    padding-bottom: 10px;
+}
+
+.ket-harga {
+    padding: 10px 40px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.pesan {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kotak-pesan{
+    width: 100%;
+    min-height: 300px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    background-image: url(assets/gambar-pesan.jpg);
+    background-position: bottom;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kotak-pesan h2{
+    font-size: 44px;
+    color: white;
+}
+
+.form-transaksi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-paket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paket {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.paket input[type="radio"] {
+    margin-right: 10px;
+}
+
+.paket label {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px;
+}
+
+.user-info label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-info input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.frst-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.frst-btn:hover {
+    background-color: #218838;
+}
+
+.confirmation {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #d4edda;
+    margin-top: 20px;
+}
+
+.confirmation p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.confirmation strong {
+    color: #155724;
+}
+
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+    }
+    .navbar nav ul li a {
+        padding: 10px 20px;
+        margin: 5px 0;
+    }
+    .container {
+        min-height: 400px;
+        background-position: 0 0;
+    }
+    .head-text h1 {
+        font-size: 48px;
+    }
+    .info1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .info1 iframe {
+        margin: 20px 0;
+    }
+    .destination-col, .list-budaya, .list-paket {
+        flex-direction: column;
+    }
+    .card1, .card2, .card3, .paket {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .hotel-card {
+        flex-direction: column;
+    }
+    .kotak-pesan h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar nav ul{
+        display: none;
+    }
+
+    iframe{
+        width: 100%;
+        align-items: center;
+    }
+
+    .container{
+        padding: 10px;
+        background-size: cover;
+        background-position: -100px 0;
+    }
+
+    .card3{
+        min-width: 250px;
+        min-height: 270px;
+    }
+
+    .paket {
+        max-width: 250px;
+        align-items: center;
+    }
+
+    .head-text h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .head-text p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .info1 .what-indo h2 {
+        font-size: 28px;
+    }
+    .destination h2, .budaya h2 {
+        font-size: 32px;
+    }
+    .card1 p, .card3 h3, .paket h3 {
+        font-size: 18px;
+    }
+    .kotak-pesan h2 {
+        font-size: 24px;
+    }
+}
