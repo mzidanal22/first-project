@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, p {
 
 .frst-btn{
     margin: 10px;
-
+    padding: 10px 20px;
     background-color: rgb(255, 43, 43);
     color: white;
     border-radius: 10px;
@@ -192,6 +192,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #menjangan{
@@ -388,7 +389,6 @@ footer{
 
 .list-paket {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -511,12 +511,12 @@ footer{
     }
 
     iframe{
-        width: 100%;
-        align-items: center;
+        width: fit-content;
+        height: fit-content;
     }
 
     .container{
-        padding: 10px;
+        padding: 20px;
         background-size: cover;
         background-position: -100px 0;
     }
@@ -532,7 +532,7 @@ footer{
     }
 
     .head-text h1 {
-        font-size: 36px;
+        font-size: 50px;
         text-align: center;
     }
     .head-text p {
@@ -540,15 +540,25 @@ footer{
         text-align: center;
     }
     .info1 .what-indo h2 {
-        font-size: 28px;
+        font-size: 40px;
+        text-align: center;
     }
     .destination h2, .budaya h2 {
-        font-size: 32px;
+        font-size: 44px;
     }
     .card1 p, .card3 h3, .paket h3 {
-        font-size: 18px;
+        font-size: 24px;
     }
     .kotak-pesan h2 {
         font-size: 24px;
+        text-shadow: 1px 2px 10px black;
+    }
+
+    .package h2{
+        margin: 0 20px;
+    }
+
+    .frst-btn {
+        width: fit-content;
     }
 }
